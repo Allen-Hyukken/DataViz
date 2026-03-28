@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures Visualization Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">DataViz</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#visualizations">Visualizations</a></li>
+            <li><a href="#algorithms">Algorithms</a></li>
+            <li><a href="#creators">Creators</a></li>
+        </ul>
+        <button class="cta-button" onclick="scrollToSection('visualizations')">Explore</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Data Structures</h1>
+            <h2>Visualization Portfolio</h2>
+            <p class="hero-subtitle">Discover the elegance that inspires, nurtures, and elevates</p>
+            <p class="hero-description">
+                Welcome to a pinnacle of algorithmic visualization. Experience our exclusive collection of 
+                interactive data structures, where each visualization redefines elegance and offers an 
+                unparalleled learning experience.
+            </p>
+            <button class="cta-button" onclick="scrollToSection('visualizations')">View Collection</button>
+        </div>
+        <div class="scroll-indicator">Scroll</div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container" id="visualizations">
+        <h2 class="section-title">Data Structures</h2>
+        <p class="section-subtitle">Visual representations of fundamental data structures</p>
+
+        <!-- Linear Data Structures -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3 class="category-title">Linear Data Structures</h3>
+                <p class="category-description">Sequential organization where elements are arranged in a linear order</p>
+            </div>
+            <div class="visualizations-grid" id="linearGrid"></div>
+        </div>
+
+        <!-- Non-Linear Data Structures -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3 class="category-title">Non-Linear Data Structures</h3>
+                <p class="category-description">Hierarchical organization where elements are arranged in multiple levels</p>
+            </div>
+            <div class="visualizations-grid" id="nonLinearGrid"></div>
+        </div>
+    </div>
+
+    <!-- Algorithms Section -->
+    <div class="container" id="algorithms">
+        <h2 class="section-title">Algorithms</h2>
+        <p class="section-subtitle">Step-by-step procedures for solving computational problems</p>
+
+        <!-- Sorting Algorithms -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3 class="category-title">Sorting Algorithms</h3>
+                <p class="category-description">Techniques for arranging elements in a defined order — ascending, descending, or custom</p>
+            </div>
+            <div class="visualizations-grid" id="sortingGrid"></div>
+        </div>
+
+        <!-- Searching Algorithms -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3 class="category-title">Searching Algorithms</h3>
+                <p class="category-description">Methods for locating specific elements or values within a data structure</p>
+            </div>
+            <div class="visualizations-grid" id="searchingGrid"></div>
+        </div>
+    </div>
+
+    <!-- Creators Section -->
+    <div class="container creators-container" id="creators">
+        <h2 class="section-title">Creators</h2>
+        <p class="section-subtitle">The minds behind this visualization portfolio</p>
+
+        <div class="creators-grid">
+            <div class="creator-card">
+                <div class="creator-avatar">AO</div>
+                <h3 class="creator-name">Allen Odang</h3>
+            </div>
+            <div class="creator-card">
+                <div class="creator-avatar">CL</div>
+                <h3 class="creator-name">Cyrel Lorica</h3>
+            </div>
+            <div class="creator-card">
+                <div class="creator-avatar">JO</div>
+                <h3 class="creator-name">Jemuel Oyat</h3>
+            </div>
+            <div class="creator-card">
+                <div class="creator-avatar">KA</div>
+                <h3 class="creator-name">Krisha Alforque</h3>
+            </div>
+            <div class="creator-card">
+                <div class="creator-avatar">KR</div>
+                <h3 class="creator-name">Khian Ruffin</h3>
+            </div>
+            <div class="creator-card">
+                <div class="creator-avatar">MD</div>
+                <h3 class="creator-name">Mike Dalaniel</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Data Structures Visualization Portfolio. Crafted with precision and elegance.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-modal-close">&times;</span>
+            <div class="video-modal-header">
+                <h3 id="modalTitle"></h3>
+            </div>
+            <div class="video-modal-body">
+                <video id="modalVideo" controls loop>
+                    <source id="modalVideoSource" src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
